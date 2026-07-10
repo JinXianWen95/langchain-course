@@ -13,7 +13,7 @@ from pydantic import BaseModel, Field
 from tavily import TavilyClient
 
 load_dotenv()
-os.environ["LANGSMITH_PROJECT"] = "search-agent"
+os.environ["LANGSMITH_PROJECT"] = "search_agent"
 tavily = TavilyClient()
 
 
