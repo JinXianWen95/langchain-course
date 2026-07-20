@@ -10,6 +10,8 @@ from langchain_pinecone import PineconeEmbeddings, PineconeVectorStore
 
 load_dotenv()
 
+os.environ["LANGSMITH_PROJECT"] = "document-helper"
+
 # Initialize embeddings
 embeddings = PineconeEmbeddings(
     model="llama-text-embed-v2",

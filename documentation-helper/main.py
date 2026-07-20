@@ -1,7 +1,10 @@
+import os
 from typing import Any, Dict, List
 
 import gradio as gr
 from backend.core import run_llm
+
+os.environ["LANGSMITH_PROJECT"] = "document-helper"
 
 
 def _format_sources(context_docs: List[Any]) -> List[str]:
